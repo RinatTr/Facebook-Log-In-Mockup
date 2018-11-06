@@ -27,7 +27,7 @@ img {
   height: auto;
 }
 
-/* input[type="password"],
+input[type="password"],
 input[type="email"],
 input[type="text"],
 input[type="submit"],
@@ -36,7 +36,7 @@ button {
 
   -webkit-appearance: none;
   -moz-appearance: none;
-} */
+}
 
 button,
 input[type="submit"] {
@@ -48,6 +48,16 @@ body {
   margin: 0px;
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  padding: 42px 0 24px;
+  font-size: 28px;
+  line-height: 36px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  color: #1d2129;
 }
 
 .header {
@@ -93,15 +103,20 @@ body {
   padding: 2px 6px;
 }
 
+div#eop, #pass {
+  padding-left: 1px;
+}
+
 #emailbox {
   grid-row: 2/3;
   grid-column: 1/2;
-  padding-top: 0px;
+  padding-top: 1px;
 }
 
 #password {
   grid-row: 2/3;
   grid-column: 2/3;
+  padding-top: 1px;
 }
 
 input {
@@ -115,7 +130,7 @@ input {
   grid-column: 2/3;
   color: #9cb4d8;
   font-weight: normal;
-  padding-top: 6px;
+  padding-top: 5px;
 }
 
 a {
@@ -131,4 +146,46 @@ a:hover {
   background-color: #edf0f5;
   width: 980px;
   height: 583px;
+}
+
+.larea {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.boxline {
+  display: inline-flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  margin-top: 14px;
+}
+
+.description {
+  align-self: center;
+  margin-left: 16px;
+}
+
+.icon img {
+  width: 56px;
+  height: 56px;
+  vertical-align: middle;
+}
+
+
+span#ltext {
+  font-family: 'Lato', sans-serif;
+  font-size: 17px;
+  line-height: 22px;
+  color: #1d2129;
+}
+
+span#rtext {
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+  color: #666;
+  font-size: 15px;
+  line-height: 20px;
+  padding-left: 2px;
 }
