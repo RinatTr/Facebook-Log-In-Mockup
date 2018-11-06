@@ -1,0 +1,134 @@
+/* CSS RESET */
+/* html, body, header, nav, h1, a,
+ul, ol, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* input[type="password"],
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+textarea,
+button {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+} */
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+} */
+
+/* Styling */
+body {
+  margin: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.header {
+  display: absolute;
+  top: 0px;
+  height: 82px;
+  min-width: 980px;
+  color: white;
+  background-color: #3b5998;
+  background-image: linear-gradient(#4e69a2, #3b5998 50%);
+  border-bottom: 1px solid #133783;
+}
+
+.header img {
+  width: 170px;
+  height: 34px;
+  margin-top: 28px;
+}
+
+.loginform {
+  display: grid;
+  grid-template-rows: 18px 1fr 25px;
+  grid-template-columns: 150px 150px 50.47px;
+  grid-column-gap: 12px;
+  font-size: 12px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-top: 15px;
+}
+
+.loginform button {
+  grid-row: 2/3;
+  color: white;
+  border-color: #29487d;
+  background-color: #4267b2;
+  font-weight: bold;
+  border-radius: 2px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  text-align: center;
+  line-height: 18px;
+  padding: 2px 6px;
+}
+
+#emailbox {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  padding-top: 0px;
+}
+
+#password {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+
+input {
+  border-color: #1d2a5b;
+  border-width: 1px;
+  width: 142px;
+  height: 20px;
+}
+
+#forgot {
+  grid-column: 2/3;
+  color: #9cb4d8;
+  font-weight: normal;
+  padding-top: 6px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.signup {
+  display: block;
+  background-color: #edf0f5;
+  width: 980px;
+  height: 583px;
+}
